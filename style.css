@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFCF9C;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+}
+
+.xbox{
+    height: 14vmin;
+    width: 14vmin;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    color: darkblue;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+
+#restart-btn{
+    padding: 1rem;
+    font-size: 1.10rem;
+    background-color: #B96D40;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: hide;
+}
+
+.hide{
+    display: none;
+}
+
+.game-title{
+    margin-top: 2rem;
+}
