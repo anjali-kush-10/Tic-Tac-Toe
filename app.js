@@ -4,10 +4,7 @@ let gifContainer=document.querySelector('.gif-container');
 let winingMsg=document.querySelector('.msg');
 
 let gameTitle=document.querySelector('.game-title');
-let game=document.querySelector('.game');
-
-
-
+let game=document.querySelector('.container');
 
 let turnO=true;
 
@@ -63,6 +60,7 @@ const disabledGame=()=>{
     for(let box of buttons){
         box.disabled=true;
     }
+
 }
 
 const showWinner=(winner)=>{
@@ -85,20 +83,11 @@ const resetGame=()=>{
     enableGame();
     gifContainer.classList.add("hide");
     gameTitle.classList.remove("hide"); 
-    game.classList.remove("hide");     
+    game.classList.remove("hide");    
 }
 
 
 restartGame.addEventListener("click",resetGame);
-
-
-
-
-
-
-
-
-
 
 
 

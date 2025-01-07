@@ -43,6 +43,7 @@ body{
     border-radius: 2rem;
     cursor: pointer;
     display: hide;
+    font-weight: bold;
 }
 
 .hide{
@@ -51,4 +52,26 @@ body{
 
 .game-title{
     margin-top: 2rem;
+    font-size: 8vmin;
+}
+
+.newgame{
+    padding: 1rem;
+    font-size: 1.10rem;
+    background-color: #B96D40;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+.msg{
+    font-size: 3vmin;
+}
+
+.adjustwinemoji {
+    background: transparent;
+    border: none; 
+    margin-top: 1rem;
 }

@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="gif-container hide">
-        <img src="./winning.gif" alt="winner">
-        <p class="msg">Congratulations</p>
-     <button id="restart-btn">Restart Game</button>
+      <img class="adjustgif" src="./winning.gif" alt="winner" height="200" width="250" />
+      <p class="msg">Congratulations</p>
+      <button id="restart-btn">Restart Game</button>
+      <br>
+      <!-- <video class="winningemoji" src="./Winningemoji.mp4" alt="emoji"></video> -->
+      <video class="adjustwinemoji" width="100" height="100" autoplay muted loop>
+        <source src="./Winningemoji.mp4" type="video/mp4">
+      </video>
     </div>
     <h4 class="game-title">Tic Tac Toe</h4>
-     <div class="container">
-        <div class="game">
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-            <button class="xbox"></button>
-        </div>
-     </div>
+    <div class="container">
+      <div class="game">
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+        <button class="xbox"></button>
+      </div>
+    </div>
 
-     
-     <!-- <button id="restart-btn">Restart Game</button> -->
-     <script src="app.js"></script>
-</body>
+    <!-- <button class="newgame">New Game</button> -->
+    <script src="app.js"></script>
+  </body>
 </html>
