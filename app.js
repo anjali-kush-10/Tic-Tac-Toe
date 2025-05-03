@@ -1,6 +1,5 @@
 let buttons=document.querySelectorAll('.xbox');
 let restartGame=document.querySelector('#restart-btn');
-let gifContainer=document.querySelector('.gif-container');
 let winingMsg=document.querySelector('.msg');
 
 let gameTitle=document.querySelector('.game-title');
@@ -64,7 +63,6 @@ const disabledGame=()=>{
 }
 
 const showWinner=(winner)=>{
-    gifContainer.classList.remove("hide");
     gameTitle.classList.add("hide"); 
     game.classList.add("hide"); 
     disabledGame();
