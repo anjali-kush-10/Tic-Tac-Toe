@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #FFCF9C;
+    background-color: #B96D40;
     text-align: center;
 }
 
@@ -31,6 +31,7 @@ body{
     border-radius: 1rem;
     font-size: 8vmin;
     color: darkblue;
+    background-color: #FFCF9C;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -38,7 +39,7 @@ body{
 #restart-btn{
     padding: 1rem;
     font-size: 1.10rem;
-    background-color: #B96D40;
+    background-color: #FFCF9C;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
@@ -75,3 +76,31 @@ body{
     border: none; 
     margin-top: 1rem;
 }
+
+
+
+.swal2-popup.winner-popup {
+    background-image: url('./winning.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFCF9C; 
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .winner-modal {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .winner-modal h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .winner-modal p {
+    font-size: 1.5rem;
+  }
+  

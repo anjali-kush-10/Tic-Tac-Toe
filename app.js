@@ -64,11 +64,36 @@ const disabledGame=()=>{
 }
 
 const showWinner=(winner)=>{
-    winingMsg.innerText=`Congratulations, Winner is ${winner} `;
     gifContainer.classList.remove("hide");
     gameTitle.classList.add("hide"); 
     game.classList.add("hide"); 
     disabledGame();
+
+    Swal.fire({
+        html: `
+          <div class="winner-modal">
+            <h1>🎉 Congratulations!</h1>
+            <p>${winner} has won the game!</p>
+          </div>
+        `,
+        showConfirmButton: true,
+        confirmButtonText: "Play Again",
+        confirmButtonColor: "#B96D40",
+        backdrop: `
+          rgba(0,0,0,0.4)
+          url("./winning.gif")
+          center center
+          no-repeat
+        `,
+        imageWidth: 400,
+        imageHeight: 300,
+        customClass: {
+          popup: 'winner-popup'
+        }
+      }).then(() => {
+        location.reload(); 
+      });
+
 }
 
 const enableGame=()=>{
@@ -77,18 +102,3 @@ const enableGame=()=>{
         box.innerText="";
     }
 }
-
-const resetGame=()=>{
-    turnO=true;
-    enableGame();
-    gifContainer.classList.add("hide");
-    gameTitle.classList.remove("hide"); 
-    game.classList.remove("hide");    
-}
-
-
-restartGame.addEventListener("click",resetGame);
-
-
-
-
